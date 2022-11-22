@@ -5,11 +5,25 @@
 }
 
 :root{
-    --color-primary: /* definir */;
+    --color-primary:  rgb(15, 112, 238);;
     --color-grey-1: #191C1F;
     --color-grey-2: #212529;
     --color-grey-3: #343A40;
     --color-grey-4: #ADB5BD;
     --color-grey-5: #CED4DA;
     --color-grey-6: #EDF2FF;
+    --color-link: rgb(87, 87, 124);
+    
+
+
+    --font-family-1: "IBM Plex Sans", sans-serif;
+    --font-family-2: "Inter", sans-serif;
+
+    --font-title: 32px;
+    --font-text: 20px;
 }
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+  }

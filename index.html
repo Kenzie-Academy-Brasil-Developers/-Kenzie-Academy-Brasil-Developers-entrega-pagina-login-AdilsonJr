@@ -4,11 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/modal.css">
+    <link rel="stylesheet" href="./src/styles/buttons.css">
+    <link rel="stylesheet" href="./src/styles/inputs.css">
+    <link rel="stylesheet" href="./src/styles/colors.css">
+    <link rel="stylesheet" href="./src/styles/text.css">
+    <link rel="stylesheet" href="./src/styles/flex.css">
     <link rel="stylesheet" href="./src/styles/globalStyles.css">
-    <link rel="stylesheet" href="./src/styles/index.css">
+    <link rel="stylesheet" href="./index.css">
     <title>Login</title>
 </head>
 <body>
+    <main class="wrapperLogin flex flex-align-center">
+        <div class="container">
+            <div class="flex flex-space-between">
+                <div class="presentation flex flex-dir-column flex-gap-3">
+                    <h1 class="title color-grey-1">DevBook</h1>
+                    <p class="text color-grey-6">A rede social para desenvolvedores que querem aumentar seu network e trocar experiências em desenvolvimento web. Faça seu cadastro e "Hello World"</p>
+                </div>
+                <div class="login bg-color-grey-4 flex flex-dir-column flex-gap-2">
+                    <h2 class="color-primary">Login</h2>
+                    <form class="flex flex-gap-1 flex-dir-column">
+                        <div class="input">
+                            <label>Username</label>
+                            <input type="text" placeholder="Type your Username"/>
+                        </div>
+                        <div class="input">
+                            <label for="password">Password</label>
+                            <input type="text" placeholder="Enter your password"/>
+                            <span data-control-modal="modal-login" class="text-end color-link">Esqueci minha senha</span>
+                        </div>
+                        <button type="button" class="button-primary">Sign in</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="modal-wrapper" id="modal-login">
+            <div class="modal flex flex-dir-column flex-gap-1">
+                <div class="modal-header">
+                    <h3 class="modal-title">Recuperação de senha</h3>
+                    <button class="modal-close" data-control-modal="modal-login">X</button>
+                </div>
+                <div class="input">
+                    <p>Insira o email cadastrado e clique em enviar para o envio de nova senha</p>
+                    <label>E-mail</label>
+                    <input type="text" placeholder="Type your E-mail"/>
+                </div>
+                <button class="button-primary">Send</button>
+            </div>
+        </div>
+    </main>
     <script src="./src/scripts/modal.js"></script>
 </body>
 </html>

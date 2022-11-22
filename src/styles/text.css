@@ -1,0 +1,13 @@
+.title {
+    font-size: var(--font-title);
+    font-family: var(--font-family-1);
+  }
+  
+.text {
+    font-size: var(--font-text);;
+    font-family: var(--font-family-2);
+  }
+
+  .text-end{
+    text-align: end;
+  }

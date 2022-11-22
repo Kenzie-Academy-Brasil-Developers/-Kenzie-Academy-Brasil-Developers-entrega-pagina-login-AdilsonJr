@@ -1,0 +1,28 @@
+.wrapperLogin{
+    height: 100vh;
+    position: relative;
+}
+
+.wrapperLogin:before {
+    content: "";
+    position: absolute;
+    width: 128vh;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-primary);
+    z-index: -1;
+  }
+
+.presentation{
+    width: 368px;
+    padding-top: 48px;
+  }
+
+.login {
+    width: 368px;
+    padding: 60px 38px;
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+  }
+  
