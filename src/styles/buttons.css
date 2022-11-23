@@ -10,6 +10,11 @@
     font-weight: 500;
   }
 
+  .forgetMyPassword{
+    border: none;
+    background-color: transparent;
+  }
+
   span{
     cursor: pointer;
   }

@@ -1,6 +1,7 @@
-const controlModal = document.querySelector("span")
+const controlModal = document.querySelector(".forgetMyPassword")
 
-controlModal.addEventListener("click", ()=>{
+controlModal.addEventListener("click", (evnt)=>{
+        evnt.preventDefault()
         controlModal.getAttribute("data-control-modal")
         document.getElementById("modal-login").classList.toggle("show-modal")
     })
